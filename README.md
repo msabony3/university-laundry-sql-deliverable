@@ -13,7 +13,7 @@ The database was built and optimized around six core entities:
 - **MACHINE** – tracks each washer and dryer  
 - **RESERVATION** – links students to scheduled machine times  
 - **BUILDING** – organizes machines by location  
-- **PAYMENT** – records reservation payments  
+- **MACHINE_TYPE** – defines machine specifications (washer or dryer) and related attributes  
 - **MAINTENANCE_REQUEST** – manages issues and repairs  
 
 The schema emphasizes referential integrity, normalization, and real-world constraints to ensure reliable operation and data accuracy.
