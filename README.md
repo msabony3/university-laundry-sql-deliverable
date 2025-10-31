@@ -1,46 +1,53 @@
-# 🧺 Laundry Reservation System  
-
-### Overview  
-This project was developed as part of a university database and analytics course. It simulates a **laundry machine reservation system** designed for student housing, allowing users to reserve washers and dryers, manage maintenance requests, and track payments.  
-
-The project demonstrates how structured data, normalization, and SQL reporting can create an efficient, data-driven scheduling platform — one that mirrors real-world facility management systems.  
+**Overview**
+This project was developed as part of a university Database Management Systems course. It simulates a laundry machine reservation system for student housing, allowing users to reserve washers and dryers, submit maintenance requests, and view operational analytics. The goal was to demonstrate how structured data, normalization, and SQL reporting can create an efficient scheduling and asset management platform similar to those used in real-world housing or facility management environments.
 
 ---
+**Database Design**
+The system is built around six normalized entities designed for referential integrity and clarity:
 
-### 🧱 Database Design  
-The database was built and optimized around six core entities:  
-- **STUDENT** – stores student information and login credentials  
-- **MACHINE** – tracks each washer and dryer  
-- **RESERVATION** – links students to scheduled machine times  
-- **BUILDING** – organizes machines by location  
-- **MACHINE_TYPE** – defines machine specifications (washer or dryer) and related attributes  
-- **MAINTENANCE_REQUEST** – manages issues and repairs  
+STUDENT – stores user information and login credentials
 
-The schema emphasizes referential integrity, normalization, and real-world constraints to ensure reliable operation and data accuracy.
+MACHINE – represents each washer and dryer, including operational details
 
----
+RESERVATION – links students to scheduled machine times
 
-### 🧮 SQL & Reporting  
-Queries were developed to generate insights for both users and administrators, including:  
-- Active and historical reservation reports  
-- Machine usage summaries by building and time  
-- Maintenance issue tracking and status updates  
-- Revenue and payment summaries  
-- Student usage analytics  
+BUILDING – organizes machines by physical location
 
-Each query highlights a different SQL concept — from joins and aggregations to subqueries and views — showcasing full-stack data logic in action.
+MACHINE_TYPE – binary variable denoting machine type, either "Washer" or "Dryer"
+
+MAINTENANCE_REQUEST – records issues, repairs, and resolution updates
+
+
+Each table was designed with clear key relationships and constraints to maintain accuracy, consistency, and usability across the system.
 
 ---
+**SQL**
+I wrote SQL queries to support both administrative and user-facing insights, including:
 
-### 🧰 Tools & Skills  
-- **SQL (MySQL)**  
-- **Excel** for prototype analysis  
-- **Data Modeling & Normalization**  
-- **Entity-Relationship Design**  
+-Current and historical reservations
+
+-Machine utilization summaries by building and time frame
+
+-Maintenance request tracking and completion rates
+
+-Revenue summaries and user payment data
+
+-Student activity analytics
+
+
+These reports highlight joins, aggregations, subqueries, and views, illustrating how SQL logic can support real-world analytics and decision-making.
 
 ---
+**Tools and Skills**
 
-### 📚 Learning Outcomes  
-This project strengthened my understanding of relational database design, efficient query writing, and how to translate operational needs into structured, analyzable data. It also emphasized clarity in schema documentation and the importance of designing systems that scale with real user behavior.
+-MySQL
+
+-Python (for query testing and data validation)
+
+-Excel (for prototype reporting and early-stage analysis)
+
+-Data modeling and normalization
+
+-Entity-relationship design
 
 ---
