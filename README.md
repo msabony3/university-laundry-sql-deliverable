@@ -1,8 +1,10 @@
 **Overview**
+
 This project was developed as part of a university Database Management Systems course. It simulates a laundry machine reservation system for student housing, allowing users to reserve washers and dryers, submit maintenance requests, and view operational analytics. The goal was to demonstrate how structured data, normalization, and SQL reporting can create an efficient scheduling and asset management platform similar to those used in real-world housing or facility management environments.
 
 ---
 **Database Design**
+
 The system is built around six normalized entities designed for referential integrity and clarity:
 
 STUDENT – stores user information and login credentials
@@ -22,6 +24,7 @@ Each table was designed with clear key relationships and constraints to maintain
 
 ---
 **SQL**
+
 I wrote SQL queries to support both administrative and user-facing insights, including:
 
 -Current and historical reservations
